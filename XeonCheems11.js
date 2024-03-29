@@ -448,7 +448,7 @@ return arr[Math.floor(Math.random() * arr.length)]
                let chats = global.db.data.chats[from]
                if (typeof chats !== 'object') global.db.data.chats[from] = {}
                if (chats) {
-                  if (!('badword' in chats)) chats.badword = false
+                  if (!('badword' in chats)) chats.badword = true
                   if (!('antiforeignnum' in chats)) chats.antiforeignnum = false
                   if (!('antibot' in chats)) chats.antibot = false
                   if (!('antiviewonce' in chats)) chats.antiviewonce = false
@@ -462,10 +462,10 @@ return arr[Math.floor(Math.random() * arr.length)]
                   if (!('anticontact' in chats)) chats.anticontact = false
                   if (!('antilocation' in chats)) chats.antilocation = false
                   if (!('antidocument' in chats)) chats.antidocument = false
-                  if (!('antilink' in chats)) chats.antilink = false
-                  if (!('antilinkgc' in chats)) chats.antilinkgc = false
+                  if (!('antilink' in chats)) chats.antilink = true
+                  if (!('antilinkgc' in chats)) chats.antilinkgc = true
                } else global.db.data.chats[from] = {
-                  badword: false,
+                  badword: true,
                   antiforeignnum: false,
                   antibot: false,
                   antiviewonce: false,
@@ -479,8 +479,8 @@ return arr[Math.floor(Math.random() * arr.length)]
                   antilocation: false,
                   antidocument: false,
                   anticontact: false,
-                  antilink: false,
-                  antilinkgc: false
+                  antilink: true,
+                  antilinkgc: true,
                }
             
             let setting = global.db.data.settings[botNumber]
@@ -6671,8 +6671,8 @@ case 'blur':
 └─ 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 
 │𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
 │𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│𝗕𝗼𝘁 : ${botname}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗼: +${ownernumber}
+│𝗕𝗼𝘁 : ${𝑅𝛩𝛭𝛯𝛫-𝛸𝐷}
+│𝗢𝘄𝗻𝗲𝗿 𝗡𝗼: +${919341378016}
 │𝗣𝗿𝗲𝗳𝗶𝘅 :  [ ${xprefix} ]
 │𝗠𝗼𝗱𝗲 : ${XeonBotInc.public ? 'Public' : `Self`}
 │𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
